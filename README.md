@@ -22,15 +22,15 @@ Examined the distribution of Age by Attrition using a boxplot.
 
 4.Feature Preprocessing: A ColumnTransformer was used to apply different preprocessing steps to different feature types:
 
-  Numerical Features: Scaled using StandardScaler.
-  Categorical Features: One-hot encoded using OneHotEncoder.
+-Numerical Features: Scaled using StandardScaler.
+-Categorical Features: One-hot encoded using OneHotEncoder.
 5.Handling Class Imbalance: RandomOverSampler was applied to the training data only to balance the classes, ensuring the models had sufficient examples of the minority class ('Yes' attrition) to learn from.
 
 6.Model Training & Evaluation: Three different classification models were trained and evaluated:
 
-   K-Nearest Neighbors (KNN)
-   Random Forest Classifier
-   Logistic Regression
+-K-Nearest Neighbors (KNN)
+-Random Forest Classifier
+-Logistic Regression
 Each model was evaluated using accuracy, confusion matrix, and a classification report (including precision, recall, and f1-score) to understand its performance on both the majority and minority classes. Models were evaluated both with and without oversampling on the training data to observe the impact of imbalance handling.
 
 ## Key Findings
